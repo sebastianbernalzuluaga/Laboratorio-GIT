@@ -1,9 +1,17 @@
+#include<iostream>
+#include<fstream>
+#include<sstream>
 
-#include <iostream>
+using namespace std;
+int main (){
+    ifstream ArchivoEntrada("input/ArchivoEntrada.txt");
 
-int main()
-{
-    std::cout<<"Hello World";
+    if (ArchivoEntrada.is_open()) {
+        cout<<"Archivo abierto"<<endl;
+        string linea;
 
-    return 0;
+        while (getline(ArchivoEntrada, linea)) {
+
+        }
+    }
 }
